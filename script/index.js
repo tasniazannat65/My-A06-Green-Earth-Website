@@ -25,7 +25,7 @@ const showCategories = (categories) => {
     const categoriesBtn = document.createElement('div');
     categoriesBtn.innerHTML = `
      <div>
-     <button id="${category.id}" onclick="loadTreesCategories('${category.id}')" class="category-btn btn shadow-sm p-3 rounded-md text-[#1F2937] bg-[#F0FDF4] w-full text-left cursor-pointer  hover:bg-green-500 hover:text-white">${category.category_name}</button>
+     <button id="${category.id}" onclick="loadTreesCategories('${category.id}')" class="category-btn btn shadow-sm p-3 rounded-md text-[#1F2937] bg-[#F0FDF4] w-full cursor-pointer  hover:bg-green-500 hover:text-white">${category.category_name}</button>
      </div>
 
     `
@@ -100,7 +100,7 @@ const showTreesCategories = (plants) => {
          <h2 onclick="loadPlantDetails('${plant.id}')" class=" font-semibold text-xl cursor-pointer">${plant.name}</h2>
          <p class="text-[#1F2937] text-[12px]">${plant.description}</p>
          <div class="flex justify-between items-center">
-         <div class="badge font-geist font-medium text-[#15803D] bg-[#DCFCE7] flex justify-center items-center rounded-full  px-6 py-2 min-w-[50px] h-10">${plant.category}</div>
+         <div class="badge font-geist font-medium text-[#15803D] bg-[#DCFCE7] flex justify-center items-center rounded-full px-3 md:px-6 py-2 min-w-[50px] h-10">${plant.category}</div>
          <p class=" font-semibold text-lg text-[#15803D]">৳<span class="plant-price">${plant.price}</span></p>
          </div>
          <button class=" cart-btn btn bg-[#15803D] text-white text-lg rounded-full w-full hover:bg-green-400">Add to Cart</button>
