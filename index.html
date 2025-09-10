@@ -82,10 +82,15 @@
         </section>
         <!-- Trees section starts here -->
          <section class="trees-catagories-container w-11/12 mx-auto mt-10 ">
+           
             <h2 class="text-3xl font-semibold text-[#1F2937] text-center mb-8">Choose Your Trees</h2>
+            <!-- spinner section -->
+            <section id="spinner" class="flex justify-center items-center py-5 hidden ">
+                 <span class="loading loading-dots loading-xl"></span>
+              </section>
             <!-- trees categories section  -->
-             <section class="grid grid-cols-12 gap-8">
-               
+             <section class="grid grid-cols-12 gap-5">
+             
                   <aside class="col-span-2">
                     <h3 class="font-semibold text-xl mb-4">Categories</h3>
                   <!-- categories container -->
@@ -122,7 +127,14 @@
         </dialog>
 
             </section>
-            <aside class=" col-span-2">
+            <aside class=" col-span-2 shadow-sm bg-white p-4 rounded-2xl ">
+                <h3 class="font-semibold text-xl mb-4">Your Cart</h3>
+                <div id="cart-container" class="space-y-4 ">
+                 
+                    
+
+                </div>
+                <h2 id="total-price" class="font-bold mt-4">Total: 0</h2>
 
             </aside>
              </section>
